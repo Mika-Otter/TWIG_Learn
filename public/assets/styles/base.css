@@ -1,0 +1,10 @@
+:root {
+    --var-bg-1: #201e1e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--var-bg-1);
+}
