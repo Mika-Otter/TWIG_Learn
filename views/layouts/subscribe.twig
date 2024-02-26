@@ -1,0 +1,48 @@
+{# subscribe.twig #}
+
+
+{% extends "../base.twig" %}
+{% block style %}
+    <link rel="stylesheet" href="./assets/styles/form.css">
+{% endblock %}
+
+{# {% block title %}
+    <title>{{title}}</title>
+{% endblock %} #}
+
+{% block main %}
+    <main>
+        <section>
+            <div>
+                <h2>Formulaire d'inscription</h2>
+            </div>
+            <div>
+                <form action="./subscribe" method="post">
+                    <div>
+                        <label for="name">Votre nom </label>
+                        <input id="name" type="text"name="name" />
+                    </div>
+                    <div>
+                        <label for="firstname">Votre prénom </label>
+                        <input id="firstname" type="text"name="firstname" />
+                    </div>
+                    <div>
+                        <label for="email">Votre E-mail </label>
+                         <input id="email" type="text" name="email" />
+                    </div>
+                    <div>
+                        <label for="password">Votre mot de passe </label>
+                        <input id="password" type="password"name="password" />
+                    </div>
+                    <div>
+                        <label for="confirm">Veuillez confirmer votre mdp : </label>
+                        <input id="confirm" type="password" name="confirm" />
+                    </div>
+                    <div>
+                       <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+{% endblock %}

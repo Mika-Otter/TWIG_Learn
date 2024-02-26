@@ -1,8 +1,8 @@
 const userRouter = require("express").Router();
 
-userRouter.get("/subscribe", async (req, res) => {
+userRouter.get("/base", async (req, res) => {
     try {
-        res.render("/subscribe.twig", {
+        res.render("layouts/subscribe.twig", {
             title: "inscription - bookstore",
         });
     } catch (error) {
@@ -10,4 +10,5 @@ userRouter.get("/subscribe", async (req, res) => {
     }
 });
 
+userRouter.post("/subscribe", (req, res) => {});
 module.exports = userRouter;

@@ -1,0 +1,22 @@
+header {
+    width: 80%;
+    height: 10vh;
+    background-color: rgb(45, 40, 34);
+    border-radius: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: #fefefe;
+}

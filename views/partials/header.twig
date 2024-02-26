@@ -1,5 +1,22 @@
-<footer>
+{#header.twig#}
+
+{% block styles %}
+<link rel="stylesheet" href="./assets/styles/header.css">
+{% endblock %}
+
+<header>
     <div>
-        <p>Copyright Ri7 2024</p>
+        <img src="./img/log" alt="logo" />
     </div>
-</footer>
+
+    <nav>
+        <ul>
+            <li>
+                <a class="link" href="">Inscription</a>
+            </li>
+            <li>
+                <a class="link" href="">Connexion</a>
+            </li>
+        </ul>
+    </nav>
+</header>
